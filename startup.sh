@@ -1,8 +1,5 @@
 #!/bin/bash
 
-S3_BUCKET="noortestdata"
-SHOWBOOST_SCRIPT="showboost.sh"
-
 
 echo "Updating system and installing required packages..."
 sudo apt update && sudo apt upgrade -y
@@ -29,7 +26,6 @@ else
 fi
 
 sudo chmod u+w .
-echo "Downloading showboost.sh script from S3..."
-sudo aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .
-sudo chmod +x $SHOWBOOST_SCRIPT
+sudo chmod +x ./showboost.sh
 sudo chmod +x ./run-analysis.sh
+sudo ./run-analysis.sh

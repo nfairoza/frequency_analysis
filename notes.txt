@@ -1,5 +1,5 @@
 git add . && git commit -m "updates" && git push
 
-git clone https://github.com/nfairoza/frequency_analysis.git && cd frequency_analysis && sudo chmod +x startup.sh && sudo ./startup.sh && sudo ./run-analysis.sh
+git clone https://github.com/nfairoza/frequency_analysis.git && cd frequency_analysis && sudo chmod +x startup.sh && sudo ./startup.sh 
 
 git reset --hard origin

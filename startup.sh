@@ -31,9 +31,9 @@ else
 fi
 
 
-WORK_DIR= ~/work
-sudo mkdir -p $WORK_DIR
-cd $WORK_DIR
+cd ~
+sudo mkdir -p work
+cd work
 
 echo "Downloading showboost.sh script from S3..."
 sudo aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .

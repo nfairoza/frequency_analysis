@@ -1,2 +1,7 @@
 git add . && git commit -m "updates" && git push
-scp -i ./aws/noor-ohio.pem -r /local/directory ec2-user@instance_public_dns:/remote/directory/
+//scp -i ./aws/noor-ohio.pem -r /local/directory ec2-user@instance_public_dns:/remote/directory/
+
+
+git clone https://github.com/nfairoza/frequency_analysis.git
+&& cd frequency_analysis
+&& sudo chmod +x startup.sh

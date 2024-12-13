@@ -32,7 +32,7 @@ else
 fi
 
 
-WORK_DIR=~/work
+WORK_DIR=./work
 mkdir -p $WORK_DIR
 cd $WORK_DIR
 

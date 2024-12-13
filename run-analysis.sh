@@ -2,7 +2,7 @@
 
 #
 S3_BUCKET="noortestdata"
-S3_PREFIX="r7a48xl"
+S3_PREFIX="m7a48xl"
 OUTPUT_FILE="${S3_PREFIX}_frequency_data.csv"
 SHOWBOOST_SCRIPT="showboost.sh"
 

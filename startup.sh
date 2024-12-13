@@ -1,7 +1,6 @@
 #!/bin/bash
 
 S3_BUCKET="noortestdata"
-S3_PREFIX="m7a"
 WORK_DIR=~/work
 
 SHOWBOOST_SCRIPT="showboost.sh"
@@ -32,11 +31,10 @@ else
 fi
 
 
-WORK_DIR=./work
-mkdir -p $WORK_DIR
+WORK_DIR=~/work
+sudo mkdir -p $WORK_DIR
 cd $WORK_DIR
 
 echo "Downloading showboost.sh script from S3..."
-aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .
-
-chmod +x $SHOWBOOST_SCRIPT
+sudo aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .
+sudo chmod +x $SHOWBOOST_SCRIPT

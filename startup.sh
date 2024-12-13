@@ -30,8 +30,8 @@ else
     exit 1
 fi
 
-
 cd ~
+sudo chmod u+w .
 sudo mkdir -p work
 cd work
 

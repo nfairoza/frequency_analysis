@@ -32,4 +32,4 @@ sudo chmod u+w .
 echo "Downloading showboost.sh script from S3..."
 sudo aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .
 sudo chmod +x $SHOWBOOST_SCRIPT
-sudo chmod +x ./run_analysis.sh
+sudo chmod +x ./run-analysis.sh

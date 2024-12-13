@@ -8,15 +8,15 @@ SHOWBOOST_SCRIPT="showboost.sh"
 
 
 
-# echo "Preparing CSV file..."
-# echo "Instance_Type,Load_Type,Time,CO_MCYC,CO_ACYC,UTIL,RATIO,MHz" > $OUTPUT_FILE
+echo "Preparing CSV file..."
+echo "Instance_Type,Load_Type,Time,CO_MCYC,CO_ACYC,UTIL,RATIO,MHz" > $OUTPUT_FILE
 
 
 process_showboost_output() {
     local load_type=$1
     local output_file=$2
     awk -v type="$load_type" -v instance="$S3_PREFIX" \
-        'NR>6 {print instance","type","$1","$2","$3","$4","$5","$6}' \
+        'NR>7 {print instance","type","$1","$2","$3","$4","$5","$6}' \
         $output_file >> $OUTPUT_FILE
 }
 

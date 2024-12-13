@@ -37,6 +37,6 @@ mkdir -p $WORK_DIR
 cd $WORK_DIR
 
 echo "Downloading showboost.sh script from S3..."
-aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT $WORK_DIR
+aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .
 
 chmod +x $SHOWBOOST_SCRIPT

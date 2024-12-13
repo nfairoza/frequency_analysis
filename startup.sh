@@ -1,8 +1,6 @@
 #!/bin/bash
 
 S3_BUCKET="noortestdata"
-WORK_DIR=~/work
-
 SHOWBOOST_SCRIPT="showboost.sh"
 
 
@@ -30,12 +28,7 @@ else
     exit 1
 fi
 
-cd ~
 sudo chmod u+w .
-sudo mkdir -p work
-cd work
-
 echo "Downloading showboost.sh script from S3..."
 sudo aws s3 cp s3://$S3_BUCKET/$SHOWBOOST_SCRIPT .
-
 sudo chmod +x $SHOWBOOST_SCRIPT

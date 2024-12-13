@@ -1,11 +1,5 @@
 git add . && git commit -m "updates" && git push
 
-git clone https://github.com/nfairoza/frequency_analysis.git
-&& cd frequency_analysis
-&& sudo chmod +x startup.sh
-&& sudo ./startup.sh
+git clone https://github.com/nfairoza/frequency_analysis.git && cd frequency_analysis && sudo chmod +x startup.sh && sudo ./startup.sh
 
 git reset --hard origin
-
-
-aws s3 cp s3://noortestdata/showboost.sh ~/showboost.sh
